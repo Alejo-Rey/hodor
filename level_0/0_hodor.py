@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 from random import *
 
-datos = {'id': '3', 'holdthedoor': 'Submit+Query'}
+datos = {'id': '771', 'holdthedoor': 'Submit+Query'}
 URL = "http://158.69.76.135/level0.php"
 id = "\n" + str(datos['id']) + "    "
 err_1 = "b'Wrong Referer. See you later hacker! [7]'"

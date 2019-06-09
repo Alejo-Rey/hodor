@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 from random import *
 
-datos = {'id': '3', 'holdthedoor': 'Submit+Query'}
+datos = {'id': '771', 'holdthedoor': 'Submit+Query'}
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; rv:60.0)'
     ' Gecko/20100101 Firefox/60.0',
@@ -52,7 +52,7 @@ def get_proxies(url):
 proxies = get_proxies('https://free-proxy-list.net/')
 
 min = int(get_vote())
-while min < 40:
+while min < 1024:
     x = sample(proxies, 1)
     page = requests.get(URL, headers=headers)
     datos['key'] = page.cookies['HoldTheDoor']

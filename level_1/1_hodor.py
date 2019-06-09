@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 from random import *
 
-datos = {'id': '3', 'holdthedoor': 'Submit+Query'}
+datos = {'id': '771', 'holdthedoor': 'Submit+Query'}
 URL = "http://158.69.76.135/level1.php"
 id = "\n" + str(datos['id']) + "    "
 err_1 = "b'Wrong Referer. See you later hacker! [7]'"
@@ -47,7 +47,7 @@ def get_proxies(url):
 proxies = get_proxies('https://free-proxy-list.net/')
 
 min = int(get_vote())
-while min < 40:
+while min < 4096:
     x = sample(proxies, 1)
     page = requests.get(URL)
     datos['key'] = page.cookies['HoldTheDoor']
